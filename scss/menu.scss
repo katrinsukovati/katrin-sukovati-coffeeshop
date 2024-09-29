@@ -16,7 +16,7 @@
 .title-box {
   width: 300px;
   height: 200px;
-  background-color: #393939;
+  background-color: $dark-color;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -71,10 +71,7 @@
   text-align: center;
   padding: 0.5rem;
 }
-.menu-subtitle {
-  text-align: center;
-  padding: 0.5rem;
-}
+
 .menu-description {
   font-style: italic;
   text-align: center;
@@ -86,8 +83,11 @@
 }
 .menu-price {
   color: #5bacc3;
-  text-align: center;
-  padding: 0.5rem;
+}
+
+.menu-subtitle,
+.menu-price {
+  @include center-text(0.5rem);
 }
 
 /* Background colors*/

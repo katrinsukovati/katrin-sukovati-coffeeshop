@@ -128,23 +128,20 @@ a {
 /* Left side (text) */
 .hero-left {
   float: left;
-  width: 50%; /* Take half of the container width */
+  width: 50%;
   text-align: left;
   padding: 10px;
   padding-top: 100px;
   margin: 0;
   align-self: center;
 }
-
-/* Right side (image) */
 .hero-right {
   float: right;
-  width: 50%; /* Take the other half of the container */
-  text-align: center; /* Center the image within its container */
+  width: 50%;
+  text-align: center;
   padding: 20px;
   margin: 0;
 }
-
 .hero-right img {
   max-width: 100%;
   height: auto;
@@ -388,6 +385,10 @@ a {
   width: 180px;
   padding: 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+.blue-btn:hover {
+  opacity: 0.8;
 }
 
 /* Background colors */

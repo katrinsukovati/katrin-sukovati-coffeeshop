@@ -153,11 +153,6 @@ a {
   padding: 0.5rem;
 }
 
-.menu-subtitle {
-  text-align: center;
-  padding: 0.5rem;
-}
-
 .menu-description {
   font-style: italic;
   text-align: center;
@@ -171,6 +166,10 @@ a {
 
 .menu-price {
   color: #5bacc3;
+}
+
+.menu-subtitle,
+.menu-price {
   text-align: center;
   padding: 0.5rem;
 }

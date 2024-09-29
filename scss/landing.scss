@@ -45,28 +45,29 @@
 }
 
 /* Left side (text) */
-.hero-left {
-  float: left;
-  width: 50%; /* Take half of the container width */
-  text-align: left;
-  padding: 10px;
-  padding-top: 100px;
-  margin: 0;
-  align-self: center;
-}
+.hero {
+  &-left {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding: 10px;
+    padding-top: 100px;
+    margin: 0;
+    align-self: center;
+  }
 
-/* Right side (image) */
-.hero-right {
-  float: right;
-  width: 50%; /* Take the other half of the container */
-  text-align: center; /* Center the image within its container */
-  padding: 20px;
-  margin: 0;
-}
+  &-right {
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
 
-.hero-right img {
-  max-width: 100%;
-  height: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 /* Product Cards */
@@ -304,12 +305,7 @@
 }
 
 .blue-btn {
-  background-color: transparent;
-  color: white;
-  border: none;
-  width: 180px;
-  padding: 20px;
-  font-size: 20px;
+  @include button(transparent, white, 180px, 20px);
 }
 
 /* Background colors */

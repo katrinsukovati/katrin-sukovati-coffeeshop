@@ -95,3 +95,22 @@ a {
     }
   }
 }
+
+// _mixins.scss
+@mixin button($bg-color, $text-color, $width, $padding) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  width: $width;
+  padding: $padding;
+  font-size: 20px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin center-text($padding) {
+  text-align: center;
+  padding: $padding;
+}
