@@ -153,8 +153,6 @@
 
 /* Were different section */
 
-/* right side */
-
 .different-container {
   display: flex;
   align-items: center;
@@ -175,32 +173,56 @@
   padding-bottom: 40px;
 }
 
-/* left side */
 .different-container__title {
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
+/* right side image */
 .different__images {
   display: flex;
-  margin-left: 60px;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
   width: 400px;
   height: 400px;
-  position: relative; /* makes the container the refrence for absolute positioning */
+  position: relative;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* No border here, only in the overlay */
 }
 
 .different__image {
-  position: absolute; /* This allows images to overlap */
-  top: 0;
-  left: 0;
-  width: 100%; /* Adjust to make the images the same size */
-  height: 100%; /* Adjust to make the images the same size */
-  object-fit: contain; /* Ensures the entire image is shown without cropping */
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Keep this behind the border */
 }
 
 .img-1 {
-  padding: 40px;
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Keep the tilted can under the border */
+}
+
+.border-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #5bacc3; /* Blue border */
+  z-index: 2; /* This is on top */
 }
 
 /* Discount banner */
