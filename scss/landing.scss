@@ -211,19 +211,22 @@
   position: absolute;
   width: 40%;
   height: auto;
-  top: 20%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Keep the can under the border */
-  animation: infinite-rotation 2s linear infinite; // 2s for one full rotation
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Initial translate to center the image */
+  z-index: 10; /* Keep the can under the border */
+
+  &:hover {
+    animation: infinite-rotation 2s linear infinite; /* Trigger infinite rotation on hover */
+  }
 }
 
 @keyframes infinite-rotation {
   from {
-    transform: rotate(0deg); // Start at 0 degrees
+    transform: translate(-50%, -50%) rotate(0deg); /* Ensure the element stays centered */
   }
   to {
-    transform: rotate(360deg); // Rotate to 360 degrees
+    transform: translate(-50%, -50%) rotate(360deg); /* Rotate while staying centered */
   }
 }
 

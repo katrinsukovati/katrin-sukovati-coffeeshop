@@ -289,19 +289,21 @@ a {
   position: absolute;
   width: 40%;
   height: auto;
-  top: 20%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  z-index: 1; /* Keep the can under the border */
-  animation: infinite-rotation 2s linear infinite;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Initial translate to center the image */
+  z-index: 10; /* Keep the can under the border */
+}
+.img-1:hover {
+  animation: infinite-rotation 2s linear infinite; /* Trigger infinite rotation on hover */
 }
 
 @keyframes infinite-rotation {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg); /* Ensure the element stays centered */
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg); /* Rotate while staying centered */
   }
 }
 .border-overlay {
