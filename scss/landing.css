@@ -1,3 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Headings and navigation */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+/* Headers and Text Deafult Styles */
+* {
+  color: #393939;
+  box-sizing: border-box;
+}
+
+/* Reset margins and paddings */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set all fonts and font sizes */
+h1,
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-size: 31px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.nav {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo .nitro-title {
+  font-size: 60px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+.nav__list .nav__item {
+  margin-left: 20px;
+}
+.nav__list .nav__item .nav__link {
+  text-decoration: none;
+}
+.nav__list .nav__item .nav__link--active {
+  color: #5bacc3;
+}
+
 /* Above the fold (hero section) */
 * {
   box-sizing: border-box;
@@ -111,7 +194,8 @@
 .product-card__image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the entire image is shown without cropping */
+  -o-object-fit: contain;
+     object-fit: contain; /* Ensures the entire image is shown without cropping */
 }
 
 .product-card__details {
@@ -152,7 +236,6 @@
 }
 
 /* Were different section */
-
 .different-container {
   display: flex;
   align-items: center;
@@ -201,7 +284,8 @@
   left: 1rem;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: 1; /* Keep this behind the border */
 }
 
@@ -283,10 +367,7 @@
 .footer__img-left {
   left: 0;
   top: 20%;
-  transform: translate(
-    -20%,
-    -20%
-  ); /* Moves it slightly outside the container */
+  transform: translate(-20%, -20%); /* Moves it slightly outside the container */
 }
 
 .footer__img-right {
@@ -296,7 +377,6 @@
 }
 
 /* Buttons and icons */
-
 .icon {
   width: 50px;
 }
@@ -317,4 +397,4 @@
 
 .grey-bg {
   background-color: #f7f7f7;
-}
+}/*# sourceMappingURL=landing.css.map */

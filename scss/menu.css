@@ -1,3 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Headings and navigation */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+/* Headers and Text Deafult Styles */
+* {
+  color: #393939;
+  box-sizing: border-box;
+}
+
+/* Reset margins and paddings */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set all fonts and font sizes */
+h1,
+h2 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+a {
+  font-size: 31px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.nav {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+.nav__logo .nitro-title {
+  font-size: 60px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+.nav__list .nav__item {
+  margin-left: 20px;
+}
+.nav__list .nav__item .nav__link {
+  text-decoration: none;
+}
+.nav__list .nav__item .nav__link--active {
+  color: #5bacc3;
+}
+
 .above-the-fold {
   background-image: url("/assets/images/coffee-circle.jpg");
   background-size: cover;
@@ -69,19 +152,23 @@
   text-align: center;
   padding: 0.5rem;
 }
+
 .menu-subtitle {
   text-align: center;
   padding: 0.5rem;
 }
+
 .menu-description {
   font-style: italic;
   text-align: center;
   text-wrap: wrap;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
   width: 35%;
 }
+
 .menu-price {
   color: #5bacc3;
   text-align: center;
@@ -97,4 +184,4 @@
 .grey-bg {
   background-color: #f7f7f7;
   padding: 2rem;
-}
+}/*# sourceMappingURL=menu.css.map */
