@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Headings and navigation */
 body {
   font-family: "Open Sans";
