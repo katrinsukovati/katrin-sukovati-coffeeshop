@@ -42,6 +42,10 @@
   position: relative;
   bottom: 0.35rem;
   right: 0.35rem;
+  &:active {
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* Left side (text) */
@@ -181,7 +185,7 @@
   padding-bottom: 20px;
 }
 
-/* right side image */
+/* Right side image */
 .different__images {
   display: flex;
   justify-content: center;
@@ -217,7 +221,7 @@
   z-index: 10; /* Keep the can under the border */
 
   &:hover {
-    animation: infinite-rotation 2s linear infinite; /* Trigger infinite rotation on hover */
+    animation: infinite-rotation 2s linear infinite; /* infinite rotation on hover */
   }
 }
 

@@ -124,6 +124,10 @@ a {
   bottom: 0.35rem;
   right: 0.35rem;
 }
+.inner-btn:active {
+  bottom: 0;
+  right: 0;
+}
 
 /* Left side (text) */
 .hero-left {
@@ -258,7 +262,7 @@ a {
   padding-bottom: 20px;
 }
 
-/* right side image */
+/* Right side image */
 .different__images {
   display: flex;
   justify-content: center;
@@ -295,7 +299,7 @@ a {
   z-index: 10; /* Keep the can under the border */
 }
 .img-1:hover {
-  animation: infinite-rotation 2s linear infinite; /* Trigger infinite rotation on hover */
+  animation: infinite-rotation 2s linear infinite; /* infinite rotation on hover */
 }
 
 @keyframes infinite-rotation {
@@ -396,9 +400,6 @@ a {
   padding: 20px;
   font-size: 20px;
   cursor: pointer;
-}
-.blue-btn:hover {
-  opacity: 0.8;
 }
 
 /* Background colors */

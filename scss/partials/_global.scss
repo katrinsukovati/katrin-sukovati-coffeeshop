@@ -105,9 +105,6 @@ a {
   padding: $padding;
   font-size: 20px;
   cursor: pointer;
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 @mixin center-text($padding) {
