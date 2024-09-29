@@ -27,6 +27,21 @@
   place-items: center;
 }
 
+.outer-btn {
+  width: 180px;
+  background-color: #5bacc3;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.inner-btn {
+  height: 100%;
+  border: 2.5px solid black;
+  position: relative;
+  bottom: 0.35rem;
+  right: 0.35rem;
+}
+
 /* Left side (text) */
 .hero-left {
   float: left;
@@ -128,11 +143,12 @@
   font-weight: bold;
 }
 
-.products__view-all-btn {
+.our-products__btn {
+  margin: 40px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
 }
 
 /* Were different section */
@@ -239,7 +255,7 @@
 }
 
 .blue-btn {
-  background-color: #5bacc3;
+  background-color: transparent;
   color: white;
   border: none;
   width: 180px;
