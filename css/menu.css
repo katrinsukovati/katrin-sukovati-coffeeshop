@@ -1,0 +1,86 @@
+/* Title box */
+.title-box {
+  width: 300px;
+  height: 200px;
+  background-color: #393939;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title {
+  color: white;
+  text-align: center;
+}
+
+.above-the-fold {
+  background-image: url("/assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Drinks list*/
+.drinks-list {
+  border-radius: 4px;
+  list-style-type: none;
+  text-align: center;
+  background-color: #393939;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.items__link {
+  color: white;
+  text-decoration: none;
+}
+
+.drinks-list__item {
+  display: inline-block;
+  margin-right: 2rem;
+  padding-left: 1rem;
+  border-left: 4px solid #5bacc3;
+  text-align: center;
+}
+
+/* The individual menu items */
+.item-type-main-title {
+  text-align: center;
+  padding: 0.5rem;
+}
+.menu-subtitle {
+  text-align: center;
+  padding: 0.5rem;
+}
+.menu-description {
+  font-style: italic;
+  text-align: center;
+  text-wrap: wrap;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+.menu-price {
+  color: #5bacc3;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Background colors*/
+.pink-bg {
+  background-color: #fff0ed;
+  padding: 2rem;
+}
+
+.grey-bg {
+  background-color: #f7f7f7;
+  padding: 2rem;
+}

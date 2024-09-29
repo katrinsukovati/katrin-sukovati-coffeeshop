@@ -1,0 +1,257 @@
+/* Above the fold (hero section) */
+* {
+  box-sizing: border-box;
+}
+
+.above-the-fold__bg {
+  width: 300px;
+  height: auto;
+}
+
+.above-the-fold__title {
+  margin-bottom: 2rem;
+}
+
+.above-the-fold__description {
+  margin-bottom: 2rem;
+  text-align: left;
+  width: 65%;
+  font-size: 25px;
+}
+
+.above-the-fold {
+  overflow: hidden;
+  padding: 40px;
+  padding-left: 200px;
+  padding-right: 200px;
+  place-items: center;
+}
+
+/* Left side (text) */
+.hero-left {
+  float: left;
+  width: 50%; /* Take half of the container width */
+  text-align: left;
+  padding: 10px;
+  padding-top: 100px;
+  margin: 0;
+  align-self: center;
+}
+
+/* Right side (image) */
+.hero-right {
+  float: right;
+  width: 50%; /* Take the other half of the container */
+  text-align: center; /* Center the image within its container */
+  padding: 20px;
+  margin: 0;
+}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Product Cards */
+/* Container to hold all product cards */
+.product-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+  gap: 20px; /* Space between the cards */
+  justify-content: center; /* Align cards to the left */
+  gap: 100px;
+}
+
+/* "our products" title */
+.our-products__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Individual product card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 440px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+}
+
+.product-card__image {
+  flex: 2; /* Takes up 2/3 of the card */
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no overflow outside the section */
+  padding: 40px;
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the entire image is shown without cropping */
+}
+
+.product-card__details {
+  flex: 1; /* Takes up 1/3 of the card */
+  background-color: #fff0ed;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Spreads items horizontally */
+  align-items: center; /* Centers items vertically */
+}
+
+.product-card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__title {
+  margin: 0;
+}
+
+.product-card__pack {
+  color: gray;
+  margin: 0;
+}
+
+.product-card__price span {
+  font-size: 2.5rem;
+  color: #5bacc3;
+  font-weight: bold;
+}
+
+.products__view-all-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+/* Were different section */
+
+/* right side */
+
+.different-container {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+}
+
+.different-container__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-right: 200px;
+}
+
+.different-container__icons {
+  padding-top: 40px;
+  display: flex;
+  gap: 80px;
+  padding-bottom: 40px;
+}
+
+/* left side */
+.different-container__title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.different__images {
+  display: flex;
+  margin-left: 60px;
+  flex: 1;
+  width: 400px;
+  height: 400px;
+  position: relative; /* makes the container the refrence for absolute positioning */
+}
+
+.different__image {
+  position: absolute; /* This allows images to overlap */
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust to make the images the same size */
+  height: 100%; /* Adjust to make the images the same size */
+  object-fit: contain; /* Ensures the entire image is shown without cropping */
+}
+
+.img-1 {
+  padding: 40px;
+}
+
+/* Discount banner */
+.discount-banner {
+  width: 90%;
+  padding: 40px;
+  margin: 200px;
+  background-color: #393939;
+  color: white;
+  margin-inline: auto;
+}
+
+.discount-banner__text {
+  font-size: 60px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.footer__card {
+  width: 330px;
+  height: 240px;
+  display: inline-block;
+  margin: 50px;
+  padding: 10px;
+  vertical-align: top; /* This makes sure that they align to the top */
+}
+
+.footer__title {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.footer__desc {
+  padding-bottom: 20px;
+}
+
+/* Buttons and icons */
+
+.icon {
+  width: 50px;
+}
+
+.blue-btn {
+  background-color: #5bacc3;
+  color: white;
+  border: none;
+  width: 180px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Background colors */
+.pink-bg {
+  background-color: #fff0ed;
+}
+
+.grey-bg {
+  background-color: #f7f7f7;
+}
